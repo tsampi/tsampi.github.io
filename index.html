@@ -1,1 +1,94 @@
-<h1>hi</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tsampi BFT: Leaderless One-Round Voting with Parameterized Finality, by Tim Watts.">
+  <title>Tsampi BFT — Tim Watts</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      margin: 0;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    main {
+      width: min(44rem, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: clamp(3rem, 10vw, 7rem) 0;
+    }
+
+    article {
+      border-top: 0.35rem solid currentColor;
+      padding-top: 1.5rem;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 4.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    .byline {
+      margin: 1.5rem 0 0;
+      font-size: 1.1rem;
+    }
+
+    .summary {
+      max-width: 65ch;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+
+    .paper-link {
+      display: inline-block;
+      padding: 0.8rem 1.15rem;
+      border: 0.12rem solid currentColor;
+      border-radius: 0.25rem;
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .paper-link:hover,
+    .paper-link:focus-visible {
+      background: CanvasText;
+      color: Canvas;
+    }
+
+    .metadata {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article aria-labelledby="paper-title">
+      <h1 id="paper-title">Tsampi BFT: Leaderless One-Round Voting with Parameterized Finality</h1>
+      <p class="byline">
+        Tim Watts ·
+        <a href="mailto:tim@readevalprint.com">tim@readevalprint.com</a>
+      </p>
+      <p class="summary">
+        A leaderless Byzantine fault-tolerant protocol with parameterized proposal admission,
+        dual-linked Vote chains, deterministic single-parent proposal choice, and cumulative
+        exact-lineage finality.
+      </p>
+      <p>
+        <a class="paper-link" href="./tsampi-bft-1.0.pdf" type="application/pdf">Read the paper (PDF)</a>
+      </p>
+      <p class="metadata">Published August 17, 2026 · 5 pages</p>
+    </article>
+  </main>
+</body>
+</html>
