@@ -80,13 +80,16 @@
         <a href="mailto:tim@readevalprint.com">tim@readevalprint.com</a>
       </p>
       <p class="summary">
-        A leaderless Byzantine fault-tolerant protocol with parameterized proposal admission,
-        dual-linked Vote chains, deterministic single-parent proposal choice, and cumulative
-        exact-lineage finality.
+        Tsampi BFT is a leaderless Byzantine fault-tolerant state-replication protocol with one 
+        Vote round per Proposed Block and exact-lineage finality in as few as two later Blocks. 
+        Its dual-linked Vote chain records both Block- lineage causality and each Validator’s 
+        endorsement order. Earlier Votes are neither revoked nor reassigned; every successor 
+        must prove that it targets a strictly better proposal.      
       </p>
       <p>
-        <a class="paper-link" href="./tsampi-bft-1.1.pdf" type="application/pdf">Read the paper (PDF)</a>
+        <a class="paper-link" href="./tsampi-bft-1.2.pdf" type="application/pdf">Read the paper (PDF)</a>
       </p>
+      <p class="metadata">Updated August 21, 2026</p>
       <p class="metadata">Published August 17, 2026</p>
     </article>
   </main>
