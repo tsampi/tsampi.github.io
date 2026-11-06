@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tsampi BFT: Leaderless One-Round Voting with Parameterized Finality, by Tim Watts.">
+  <meta name="description" content="Tsampi BFT: Tsampi BFT: Leaderless Voting With Quorum-Ancestry Finality, by Tim Watts.">
   <title>Tsampi BFT — Tim Watts</title>
   <style>
     :root {
@@ -75,17 +75,13 @@
 <body>
   <main>
     <article aria-labelledby="paper-title">
-      <h1 id="paper-title">Tsampi BFT: Leaderless One-Round Voting with Parameterized Finality</h1>
+      <h1 id="paper-title">Tsampi BFT: Tsampi BFT: Leaderless Voting With Quorum-Ancestry Finality</h1>
       <p class="byline">
         Tim Watts ·
         <a href="mailto:tim@readevalprint.com">tim@readevalprint.com</a>
       </p>
       <p class="summary">
-        Tsampi BFT is a leaderless Byzantine fault-tolerant state-replication protocol with one 
-        Vote round per Proposed Block and exact-lineage finality in as few as two later Blocks. 
-        Its dual-linked Vote chain records both Block- lineage causality and each Validator’s 
-        endorsement order. Earlier Votes are neither revoked nor reassigned; every successor 
-        must prove that it targets a strictly better proposal.
+        Tsampi BFT is a leaderless, asynchronous Byzantine fault tolerant state replication protocol. A Vote endorses one Block and uses PrevVote and PrevSelfVote to record ancestry and signed order. Blocks contain Votes endorsing their parent Block, and different children can contain the same Votes. Ancestry, scores and historical quorum queries determine permitted Votes and finalization. Under fixed authority and a quorum for each parent, three later Blocks finalize a selected Block; a fourth finalizes its child
       </p>
       <p>
         <a class="paper-link" href="https://github.com/tsampi/tsampi-bft/blob/develop/tsampi-bft.pdf">Read the paper (PDF)</a>
